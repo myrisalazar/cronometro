@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    background-color: #197bfb;
+    background-image: linear-gradient(270deg, #197bfb 0%, #B721FF 100%);   
+}
+
+ .button{
+    width: 80px;
+    height: 80px;
+    margin: 2px;
+}
+
+.result{
+    width: 335px;
+    height: 70px;
+    background-color: whitesmoke;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+.calculadora{
+    position: relative;
+    left: 550px;
+    top: 200px;
+    border-radius: 10px;
+}
+
+ 
