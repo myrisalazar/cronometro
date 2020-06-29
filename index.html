@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronometro</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- agregar metas -->
 </head>
 <body>
-    
+    <section class="container">
+        <h1>Cronometro</h1>
+        <div class="">
+            <div id="Horas">00</div>
+            <div id="Minutos">:00</div>
+            <div id="Segundos">:00</div>
+            <div id="Centesimas">:00</div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary" id="inicio" onclick="inicio()">Inicio</button>
+            <button type="button" class="btn btn-warning" id="reseteo" onclick="reinicio()">Resetear</button>
+            <button type="button" class="btn btn-warning" id="parar" onclick="parar()">Parar</button>
+            <button type="button" class="btn btn-warning" id="continuar" onclick="inicio()">Continuar</button>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cronometro.js"></script>
 </body>
+
 </html>
