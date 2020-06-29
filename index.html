@@ -5,26 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronometro</title>
+    <meta name="author" content="Myriam Salazar">
+    <meta name="description" content="cronometro">
+    <meta name="keywords" content="Cronometro, app cronometro, cronometro con javascript, cronometro js">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- agregar metas -->
+
 </head>
 
 <body>
     <section class="container">
         <h1 class="text-center my-5">Cronometro</h1>
-        <div class="d-flex justify-content-center time">
-            <div id="Horas">00</div>
-            <div id="Minutos">:00</div>
-            <div id="Segundos">:00</div>
-            <div id="Centesimas">:00</div>
+        <div class="cronometro">
+            <div class="d-flex justify-content-center time">
+                <div id="Horas">00</div>
+                <div id="Minutos">:00</div>
+                <div id="Segundos">:00</div>
+                <div id="Centesimas">:00</div>
+            </div>
+            <div class="text-center my-4">
+                <button type="button" class="btn btn-primary btn-lg" id="inicio" onclick="inicio()">Inicio</button>
+                <button type="button" class="btn btn-warning btn-lg" id="reseteo" onclick="reinicio()">Resetear</button>
+                <button type="button" class="btn btn-info btn-lg" id="parar" onclick="parar()">Parar</button>
+                <button type="button" class="btn btn-danger btn-lg" id="continuar" onclick="inicio()">Continuar</button>
+            </div>
         </div>
-        <div class="text-center my-4">
-            <button type="button" class="btn btn-primary btn-lg" id="inicio" onclick="inicio()">Inicio</button>
-            <button type="button" class="btn btn-warning btn-lg" id="reseteo" onclick="reinicio()">Resetear</button>
-            <button type="button" class="btn btn-info btn-lg" id="parar" onclick="parar()">Parar</button>
-            <button type="button" class="btn btn-danger btn-lg" id="continuar" onclick="inicio()">Continuar</button>
-        </div>
+
     </section>
 
     <script src="js/jquery-3.5.1.min.js"></script>
