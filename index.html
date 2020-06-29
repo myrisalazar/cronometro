@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronometro</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- agregar metas -->
 </head>
+
 <body>
     <section class="container">
-        <h1>Cronometro</h1>
-        <div class="">
+        <h1 class="text-center my-5">Cronometro</h1>
+        <div class="d-flex justify-content-center time">
             <div id="Horas">00</div>
             <div id="Minutos">:00</div>
             <div id="Segundos">:00</div>
             <div id="Centesimas">:00</div>
         </div>
-        <div>
-            <button type="button" class="btn btn-primary" id="inicio" onclick="inicio()">Inicio</button>
-            <button type="button" class="btn btn-warning" id="reseteo" onclick="reinicio()">Resetear</button>
-            <button type="button" class="btn btn-warning" id="parar" onclick="parar()">Parar</button>
-            <button type="button" class="btn btn-warning" id="continuar" onclick="inicio()">Continuar</button>
+        <div class="text-center my-4">
+            <button type="button" class="btn btn-primary btn-lg" id="inicio" onclick="inicio()">Inicio</button>
+            <button type="button" class="btn btn-warning btn-lg" id="reseteo" onclick="reinicio()">Resetear</button>
+            <button type="button" class="btn btn-info btn-lg" id="parar" onclick="parar()">Parar</button>
+            <button type="button" class="btn btn-danger btn-lg" id="continuar" onclick="inicio()">Continuar</button>
         </div>
     </section>
 

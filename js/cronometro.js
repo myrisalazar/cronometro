@@ -6,9 +6,9 @@ let centesimas = 0;
 function inicio() {
     control = setInterval(cronometro, 10);
     document.getElementById("inicio") = true;
-    document.getElementById("parar") = true;
+    document.getElementById("parar") = false;
     document.getElementById("continuar") = true;
-    document.getElementById("resetear") = true;
+    document.getElementById("resetear") = false;
 }
 
 function parar() {
@@ -26,7 +26,7 @@ function reinicio() {
     Segundos.innerHTML = ":00";
     Minutos.innerHTML = ":00";
     Horas.innerHTML = "00";
-    document.getElementById("inicio") = true;
+    document.getElementById("inicio") = false;
     document.getElementById("parar") = true;
     document.getElementById("continuar") = true;
     document.getElementById("resetear") = true;
@@ -46,8 +46,8 @@ function cronometro() {
         if (segundos < 10) { segundos = "0" + segundos }
         Segundos.innerHTML = ":" + segundos;
     }
-    if (centesimas == 59) {
-        centesimas = -1;
+    if (segundos == 59) {
+        segundos = -1;
     }
     if ((centesimas == 0) && (segundos == 0)) {
         minutos++;

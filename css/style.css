@@ -3,5 +3,14 @@
     padding: 0;
 }
 
+.container{
+    height: 320px;
+    background-color: rgb(231, 230, 230);
+}
+
+.time{
+    font-size: 80px;
+    color: gray;
+}
 
  
